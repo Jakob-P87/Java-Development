@@ -32,7 +32,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SimpleCalc">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="se.lexicon.jakob.App" />
       <module name="Simple Calculator" />
@@ -46,8 +46,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimpleCalc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.lexicon.jakob.SimpleCalc" />
+      <module name="Simple Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.lexicon.jakob.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimpleCalc" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
