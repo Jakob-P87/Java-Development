@@ -38,17 +38,14 @@ public class SimpleCalc {
     //Main method to get user input and call different operator methods to get the result
     static void calculate()
     {
-        boolean keepCalculating = true; //Set bool to true
-
-        double num1; //User input variable
-        double num2; //User input variable
+        double userInput1; //User input variable
+        double userInput2; //User input variable
 
         System.out.printf("Number: ");
-        num1 = scan.nextDouble(); //User input for first number
-        double firstNumber = num1; //Save the value of the first input as origin number
+        userInput1 = scan.nextDouble(); //User input for first number
+        double baseNumber = userInput1; //Set variable baseNumber as userInput
 
-
-        while (keepCalculating) //keep application running as long as true
+        while (true) //keep application running as long as true
         {
             char operator;
 
@@ -57,57 +54,69 @@ public class SimpleCalc {
 
             if (operator == 'q') //If the user press Q, quit calculator method and return to menu
             {
-                keepCalculating = false;
+                return;
             } else //If the user selects an operator the calculation method will keep going
-                {
+            {
                 System.out.printf("Number: ");
-                num2 = scan.nextDouble(); //User input for second number
+                userInput2 = scan.nextDouble(); //User input for second number
 
                 switch (operator) {
                     case '+': //Call Addition method
-                        num1 = addition(num1, num2);
+                        userInput1 = addition(userInput1, userInput2);
                         break;
                     case '-': //Call subtraction method
-                        num1 = subtraction(num1, num2);
+                        userInput1 = subtraction(userInput1, userInput2);
                         break;
                     case '*': //Call multiplication method
-                        num1 = multiplication(num1, num2);
+                        userInput1 = multiplication(userInput1, userInput2);
                         break;
                     case '/': //Call division method
-                        num1 = division(num1, num2);
+                        while (userInput2 == 0) //Check if the input is 0, If true ask user to make new input for the second number
+                        {
+                            System.out.println("------------------------------------------");
+                            System.out.printf("Not able to divide by 0 input new number! \n Number: ");
+                            userInput2 = scan.nextDouble(); //Get new input from the user
+                            if (userInput2 != 0) //If the user types other number then 0, exit the loop and continue calculating
+                            {
+                                break;
+                            }
+                        }
+                        userInput1 = division(userInput1, userInput2);
                         break;
                     default:
                         System.out.println("Invalid input");
                         return;
                 }
 
-                System.out.println("Result: " + firstNumber + " " + operator + " " + num2 + " = " + num1); //Show the result of the calculation
-                firstNumber = num1; //Save the result of num1 as the origin number to use for further calculation
+                System.out.println("------------------------------------------");
+                System.out.println("Result: " + baseNumber + " " + operator + " " + userInput2 + " = " + userInput1); //Show the result of the calculation
+                System.out.println("------------------------------------------");
+                baseNumber = userInput1; //Save the result of userInput1 after calculation is done
             }
         }
     }
 
     //Addition method
-    static double addition(double num1, double num2)
+    static double addition(double userInput1, double userInput2)
     {
-        return num1 + num2; //Return the value for num1 + num2
+        return userInput1 + userInput2; //Return the value for userInput1 + userInput2
     }
 
     //Subtraction method
-    static double subtraction(double num1, double num2)
+    static double subtraction(double userInput1, double userInput2)
     {
-        return num1 - num2; //Return the value for num1 - num2
+        return userInput1 - userInput2; //Return the value for userInput1 - userInput2
     }
 
     //Multiplication method
-    static double multiplication(double num1, double num2)
+    static double multiplication(double userInput1, double userInput2)
     {
-        return num1 * num2; //Return the value for num1 * num2
+        return userInput1 * userInput2; //Return the value for userInput1 * userInput2
     }
 
     //Division method
-    static double division(double num1, double num2)
+    static double division(double userInput1, double userInput2)
     {
-        return num1 / num2; //Return the value for num1 / num2
+        return userInput1 / userInput2; //Return the value for userInput1 / userInput2
     }
 }

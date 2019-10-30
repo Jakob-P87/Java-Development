@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="186238d1-dade-4715-ab4a-0a7bb33f4fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../JavaMasterclassUdemy/src/main/java/se/lexicon/jakob/BoolChar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMasterclassUdemy/src/main/java/se/lexicon/jakob/PrimitiveTypesChallenge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMasterclassUdemy/src/main/java/se/lexicon/jakob/Primitives.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMasterclassUdemy/src/main/java/se/lexicon/jakob/Strings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/jakob/SimpleCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/jakob/SimpleCalc.java" afterDir="false" />
+    <list default="true" id="aceccad5-4e13-4aea-9647-0fef6d4a2a36" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/jakob/BoolChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/jakob/PrimitiveTypesChallenge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/jakob/Primitives.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/jakob/Strings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simple Calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Simple Calculator/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +14,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -25,10 +32,13 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1Ssi1TJnuYer4jnNFGey8RZpyM7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1SuqVjKItoEisBinTfIPh9A9EGZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Assignments/Assignment1" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -42,10 +52,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SimpleCalc">
+  <component name="RunManager" selected="Application.Primitives">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="se.lexicon.jakob.App" />
-      <module name="Simple Calculator" />
+      <module name="JavaMasterclassUdemy" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="se.lexicon.jakob.*" />
@@ -56,9 +66,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleCalc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="se.lexicon.jakob.SimpleCalc" />
-      <module name="Simple Calculator" />
+    <configuration name="BoolChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.lexicon.jakob.BoolChar" />
+      <module name="JavaMasterclassUdemy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.lexicon.jakob.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Primitives" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.lexicon.jakob.Primitives" />
+      <module name="JavaMasterclassUdemy" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="se.lexicon.jakob.*" />
@@ -71,7 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SimpleCalc" />
+        <item itemvalue="Application.Primitives" />
+        <item itemvalue="Application.BoolChar" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -81,11 +105,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="186238d1-dade-4715-ab4a-0a7bb33f4fb8" name="Default Changelist" comment="" />
-      <created>1572358488510</created>
+      <changelist id="aceccad5-4e13-4aea-9647-0fef6d4a2a36" name="Default Changelist" comment="" />
+      <created>1572423853980</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572358488510</updated>
+      <updated>1572423853980</updated>
     </task>
     <servers />
   </component>
@@ -94,9 +118,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
