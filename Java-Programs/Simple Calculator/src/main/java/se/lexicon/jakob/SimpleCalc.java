@@ -18,17 +18,26 @@ public class SimpleCalc {
         boolean keepAlive = true; //Set boolean to true
 
         while (keepAlive) {
-            System.out.printf("-----[Calculator]-----\n 1: Calculate\n 2: Exit \n Selected: ");
+            System.out.printf("---------------[Calculator]---------------" +
+                    "\n1: Calculate" +
+                    "\n2: Operators Info" +
+                    "\n3: Exit" +
+                    "\n------------------------------------------" +
+                    "\nSelected: ");
             int choice = scan.nextInt(); //User input for menu selection
 
             switch (choice) {
                 case 1: //Call the calculate method
                     calculate();
                     break;
-                case 2: //Set boolean to false to stop looping the application
+                case 2:
+                    infoOperators();
+                    break;
+                case 3: //Set boolean to false to stop looping the application
                     keepAlive = false;
                     System.out.println("Application Terminated.");
                     break;
+
                 default:
                     System.out.println("Invalid input");
             }
@@ -118,5 +127,14 @@ public class SimpleCalc {
     static double division(double userInput1, double userInput2)
     {
         return userInput1 / userInput2; //Return the value for userInput1 / userInput2
+    }
+
+    static void infoOperators()
+    {
+        System.out.println("The (+) operator will use addition when selected");
+        System.out.println("The (-) operator will use subtraction when selected");
+        System.out.println("The (*) operator will use multiplication when selected");
+        System.out.println("The (/) operator will use division when selected,\nBut you can´t divide anything with 0");
+
     }
 }
