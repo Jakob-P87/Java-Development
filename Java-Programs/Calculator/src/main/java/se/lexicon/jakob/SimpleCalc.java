@@ -7,13 +7,15 @@ public class SimpleCalc {
 
     public static void main(String[] args)
     {
-        scan = new Scanner(System.in); //Create new scanner
+        scan = new Scanner(System.in); //Create new scanner called scan to be able to use it
         menu(); // Call menu method at the start of application
     }
 
+    //Will be used to call for different functions in the application through a menu system
+    //And it will keep looping until the user wants to quit
     static void menu()
     {
-        boolean keepAlive = true; //Set bool to true
+        boolean keepAlive = true; //Set boolean to true
 
         while (keepAlive) {
             System.out.printf("-----[Calculator]-----\n 1: Calculate\n 2: Exit \n Selected: ");
@@ -23,7 +25,7 @@ public class SimpleCalc {
                 case 1: //Call the calculate method
                     calculate();
                     break;
-                case 2: //Set bool to false to kill application
+                case 2: //Set boolean to false to stop looping the application
                     keepAlive = false;
                     System.out.println("Kill application.");
                     break;
@@ -33,16 +35,17 @@ public class SimpleCalc {
         }
     }
 
+    //Main method to get user input and call different operator methods to get the result
     static void calculate()
     {
         boolean keepCalculating = true; //Set bool to true
 
-        double num1; //Input variable
-        double num2; //Input variable
+        double num1; //User input variable
+        double num2; //User input variable
 
         System.out.printf("Number: ");
         num1 = scan.nextDouble(); //User input for first number
-        double firstNumber = num1; //Save the value of the result as origin number
+        double firstNumber = num1; //Save the value of the first input as origin number
 
 
         while (keepCalculating) //keep application running as long as true
@@ -52,10 +55,11 @@ public class SimpleCalc {
             System.out.printf("Operator (+,-,*,/) (q) to quit: ");
             operator = scan.next().charAt(0); //User input for operator selection
 
-            if (operator == 'q') //If the user press Q, quit calculator and return to menu
+            if (operator == 'q') //If the user press Q, quit calculator method and return to menu
             {
                 keepCalculating = false;
-            } else {
+            } else //If the user selects an operator the calculation method will keep going
+                {
                 System.out.printf("Number: ");
                 num2 = scan.nextDouble(); //User input for second number
 
@@ -78,7 +82,7 @@ public class SimpleCalc {
                 }
 
                 System.out.println("Result: " + firstNumber + " " + operator + " " + num2 + " = " + num1); //Show the result of the calculation
-                firstNumber = num1; //Save the result as the origin number
+                firstNumber = num1; //Save the result of num1 as the origin number to use for further calculation
             }
         }
     }
@@ -86,24 +90,24 @@ public class SimpleCalc {
     //Addition method
     static double addition(double num1, double num2)
     {
-        return num1 + num2;
+        return num1 + num2; //Return the value for num1 + num2
     }
 
     //Subtraction method
     static double subtraction(double num1, double num2)
     {
-        return num1 - num2;
+        return num1 - num2; //Return the value for num1 - num2
     }
 
     //Multiplication method
     static double multiplication(double num1, double num2)
     {
-        return num1 * num2;
+        return num1 * num2; //Return the value for num1 * num2
     }
 
     //Division method
     static double division(double num1, double num2)
     {
-        return num1 / num2;
+        return num1 / num2; //Return the value for num1 / num2
     }
 }
