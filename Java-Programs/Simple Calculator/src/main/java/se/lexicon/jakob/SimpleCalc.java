@@ -51,8 +51,8 @@ public class SimpleCalc {
         double userInput2; //User input variable
 
         System.out.printf("Number: ");
-        userInput1 = scan.nextDouble(); //User input for first number
-        double baseNumber = userInput1; //Set variable baseNumber as userInput
+        userInput1 = scan.nextDouble(); //User input for first number, will only be used at the start of the calculation
+        double baseNumber = userInput1; //baseNumber will  be assigned the value of the userInput1
 
         while (true) //keep application running as long as true
         {
@@ -81,9 +81,9 @@ public class SimpleCalc {
                         break;
                     case '/': //Call division method
                         while (userInput2 == 0) //Check if the input is 0, If true ask user to make new input for the second number
-                        {
-                            System.out.println("------------------------------------------");
-                            System.out.printf("Not able to divide by 0 input new number! \n Number: ");
+                        {                       //This will keep looping as long as the input is 0
+                            System.out.println("------------------------------------------"); //Just a separation to make it easier to read the console
+                            System.out.printf("Not able to divide by 0 input new number! \n Number: "); //The application will ask the user for another input if userInput1 is equal 0
                             userInput2 = scan.nextDouble(); //Get new input from the user
                             if (userInput2 != 0) //If the user types other number then 0, exit the loop and continue calculating
                             {
@@ -131,10 +131,11 @@ public class SimpleCalc {
 
     static void infoOperators()
     {
+        System.out.println("---------------------------------------------------------");
         System.out.println("The (+) operator will use addition when selected");
         System.out.println("The (-) operator will use subtraction when selected");
         System.out.println("The (*) operator will use multiplication when selected");
         System.out.println("The (/) operator will use division when selected,\nBut you can´t divide anything with 0");
-
+        System.out.println("---------------------------------------------------------");
     }
 }
